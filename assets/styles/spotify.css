@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body {
+  background-color: rgb(167, 231, 111);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 4.375rem;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+nav li {
+  padding: 0 0.625rem;
+  cursor: pointer;
+}
+
+.brand img {
+  width: 3.125rem;
+  padding-right: 0.625rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.875rem;
+}
+.container {
+  min-height: 80vh;
+  background-color: sandybrown;
+  color: rgb(250, 249, 249);
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  margin: 1.4375rem auto;
+  width: 80%;
+  border-radius: 0.75rem;
+  padding: 2.125rem;
+  background-image: url('../images/bg.jpg');
+}
+
+.bottom {
+  position: sticky;
+  height: 5rem;
+  background-color: rgb(6, 5, 6);
+  color: rgb(255, 254, 251);
+  /* bottom: 20px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  margin-top: 0.75rem;
+}
+
+.icons i {
+  cursor: pointer;
+}
+#myProgress {
+  width: 100%;
+  cursor: pointer;
+}
+.songItem {
+  height: 3.125rem;
+  width: 25rem;
+  display: flex;
+  background-color: rgb(30, 46, 25);
+  margin: 0.75rem 0;
+  justify-content: space-between;
+  align-items: center; 
+  border: 0.125rem solid rgb(197, 20, 111);
+  border-radius: 1.875rem;
+  
+}
+
+.songItem img{
+    width: 2.5rem;
+    margin-left: 0.625rem;
+    border: 0.125rem solid black;
+    border-radius: 1.25rem;
+    
+}
+
+.timePlay{
+    margin-right: 10px;
+}
+
+.timePlay i{
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 1vh;
+    font-family: 'Ubuntu', sans-serif;
+    top: 35px;
+}
+.songInfo img{
+   opacity: 0;
+   transition: opacity 0.5s ease-in
+}
